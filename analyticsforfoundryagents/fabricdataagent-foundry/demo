@@ -1,0 +1,22 @@
+Prerequisites to use Fabric Data Agent: https://learn.microsoft.com/en-us/fabric/data-science/data-agent-tenant-settings
+https://learn.microsoft.com/en-us/fabric/data-science/how-to-create-data-agent#prerequisites
+
+Step 1: set up Fabric data agent
+Follow this step. Should be straightforward. 
+Be careful a few details:
+Fabric Data Agent cant not query cross engines. If you need to do so , try use shortcut to bring the data into one engine. 
+
+Step 2: Test Fabric data agent performance and optimise by adding instructions and SQL queries. Follow best practice https://learn.microsoft.com/en-us/fabric/data-science/data-agent-configuration-best-practices
+
+
+Step 3: Create a Foundry agent 
+
+Step 4: Add Fabric data agent as a tool to the agent. 
+Pickupng our workspace id and agent id from the url. 
+e.g 'https://app.fabric.microsoft.com/groups/de5adbb5-8c88-4575-8170-1ab787269436/aiskills/01b505fb-f629-44b6-b727-8069707a0047?experience=fabric-developer'
+Workspace id  : de5adbb5-8c88-4575-8170-1ab787269436
+artifact id : 01b505fb-f629-44b6-b727-8069707a0047
+
+
+Step 5: edit the Foundry agent instruction to use the different analytics. 
+E.g 'When a user asks any question about sales revenue questions, use the Databricks Genie. When user ask about clicks and impressions use the Fabric data agent. '
